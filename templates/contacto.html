@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <div class="col-md-12 text-center">
+            <img src="{% static 'img/logoq.png' %}" width="70%">
+            <h1 class="text-center">Contactanos</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="well well-sm">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Correo</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                   aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">Ingrese su correo para poder
+                                contactarlo</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Mensaje</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="qrcode">
+                    <img src="https://www.codigos-qr.com/qr/php/qr_img.php?d=https%3A%2F%2Fweb.whatsapp.com%2F&s=8&e=m"
+                         alt="Generador de Códigos QR Codes"/>
+                    <img src="{% static 'img/whatsapp.png' %}" width="30%">
+                </div>
+                
+            </div>
+            <div class="col-md-12">
+                <div>
+                    <h5>Ubicacion</h5>
+                </div>
+                <div class="row">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21274.455168329583!2d-99.19632074373841!3d19.506039669462545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d202d0bd297887%3A0x9cd7630f1dfbf6a9!2sCto.%20Puericultores%2018%2C%20Cd.%20Sat%C3%A9lite%2C%2053100%20Naucalpan%20de%20Ju%C3%A1rez%2C%20M%C3%A9x.!5e0!3m2!1ses!2smx!4v1605831681122!5m2!1ses!2smx"
+                            width="1000" height="400" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+
+                <small class="d-block mb-3 text-muted">&copy; 2017-2019</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Link</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Nosotros</a></li>
+                    <li><a class="text-muted" href="#">Contacto</a></li>
+                    <li><a class="text-muted" href="#">Organigrama</a></li>
+                    <li><a class="text-muted" href="#">ubicacion</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Consulta</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Boton Panico</a></li>
+                    <li><a class="text-muted" href="#">PAP</a></li>
+                    <li><a class="text-muted" href="#">Seguridad</a></li>
+                    <li><a class="text-muted" href="#">Politicas</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Compromiso</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Mision</a></li>
+                    <li><a class="text-muted" href="#">Vision</a></li>
+                    <li><a class="text-muted" href="#">Valores</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+{% endblock %}
